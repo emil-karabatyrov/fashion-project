@@ -1,0 +1,36 @@
+@import "@/styles/vars";
+.vouchers {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+
+  .title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 72px;
+    width: 507px;
+    height: 144px;
+  }
+
+  .description {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: -4%;
+    color: $grayTextColor;
+    width: 450px;
+    margin-top: 40px;
+  }
+
+  .downloadBtns {
+    margin-top: 65px;
+    display: flex;
+    gap: 10px;
+    button {
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

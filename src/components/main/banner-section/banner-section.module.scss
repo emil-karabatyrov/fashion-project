@@ -1,0 +1,76 @@
+@use "@/styles/mixins" as m;
+.banner {
+  margin-top: 190px;
+  display: flex;
+  width: 1920px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  .content {
+    position: relative;
+    left: -5px;
+    width: 100%;
+    z-index: 0;
+    padding-left: 90px;
+    background: linear-gradient(
+      0deg,
+      rgba(224, 195, 64, 1),
+      rgba(223, 194, 62, 1) 4%,
+      rgba(225, 196, 65, 1) 7%,
+      rgba(227, 199, 67, 1) 10%,
+      rgba(228, 197, 66, 1) 13%,
+      rgba(230, 199, 68, 1) 16%,
+      rgba(231, 200, 69, 1) 20%,
+      rgba(229, 198, 67, 1) 24%,
+      rgba(230, 201, 69, 1) 31%,
+      rgba(227, 199, 67, 1) 37%,
+      rgba(233, 202, 72, 1) 43%,
+      rgba(237, 206, 73, 1) 50%,
+      rgba(240, 212, 76, 1) 57%,
+      rgba(244, 216, 79, 1) 63%,
+      rgba(246, 218, 82, 1) 67%,
+      rgba(247, 219, 83, 1) 74%,
+      rgba(249, 221, 85, 1) 79%,
+      rgba(249, 223, 86, 1) 86%,
+      rgba(250, 225, 87, 1) 93%,
+      rgba(249, 223, 86, 1) 100%
+    );
+    .title {
+      font-size: 111.61px;
+      font-weight: 900;
+      line-height: 137.19px;
+      margin-top: 140px;
+      position: relative;
+      &::before {
+        @include m.backgroundElem(541.43px, 130.37px, #fff);
+        position: absolute;
+        top: 0;
+        left: -37px;
+      }
+    }
+    .description {
+      width: 700px;
+      margin-top: 35px;
+      font-size: 36.04px;
+      font-weight: 500;
+      line-height: 52.32px;
+    }
+    .additionalInfo {
+      .interval {
+        font-size: 36.04px;
+        font-weight: 700;
+        line-height: 52.32px;
+        margin: 0;
+      }
+      .conditions {
+        margin: 0;
+        font-size: 36.04px;
+        font-weight: 400;
+        line-height: 52.32px;
+      }
+    }
+    button {
+      margin-top: 50px;
+      @include m.shopNowBtn;
+    }
+  }
+}

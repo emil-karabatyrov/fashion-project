@@ -1,0 +1,86 @@
+@use "@/styles/mixins" as m;
+.header {
+  display: flex;
+  margin-top: 45px;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    h1 {
+      @include m.logoStyle;
+    }
+  }
+}
+.menu {
+  display: flex;
+  gap: 65px;
+  .menuList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 65px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  .signUp {
+    font-size: 22px;
+    font-weight: 500;
+    width: 134px;
+    height: 62px;
+    color: #fff;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 7px;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    margin-top: 25px;
+    .logo {
+      gap: 10px;
+      h1 {
+        font-size: 32px;
+        font-weight: 900;
+      }
+    }
+  }
+  .menu {
+    gap: 25px;
+    .menuList {
+      gap: 25px;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 100%;
+    }
+    .signUp {
+      font-size: 20px;
+      font-weight: 500;
+      width: 125px;
+      height: 55px;
+      color: #fff;
+      background: rgba(0, 0, 0, 1);
+      border-radius: 7px;
+    }
+  }
+}
+@media (max-width: 975px) {
+  .menu {
+    .menuList {
+      gap: 25px;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 100%;
+    }
+    .signUp {
+      font-size: 20px;
+      font-weight: 500;
+      width: 125px;
+      height: 55px;
+      color: #fff;
+      background: rgba(0, 0, 0, 1);
+      border-radius: 7px;
+    }
+  }
+}
